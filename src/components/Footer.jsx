@@ -26,7 +26,7 @@ const Footer = () => (
               {footerlink.links.map((link, index) => (
                 <li
                   key={link.name}
-                  className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${
+                  className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary transition duration-300 cursor-pointer ${
                     index !== footerlink.links.length - 1 ? "mb-4" : "mb-0"
                   }`}
                 >
@@ -39,9 +39,16 @@ const Footer = () => (
       </div>
     </div>
 
-    <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
+    <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 pb-6 border-t-[1px] border-t-[#3F3E45]">
       <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
-        Developed By Web Dev Tameem Rao. All Rights Reserved. <span className="text-secondary underline">Contact Me On: </span>
+        Developed By Web Dev Tameem Rao. All Rights Reserved. <span className="text-secondary underline"></span>
+      </p>
+    </div>
+
+
+    <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 pb-6 border-t-[1px] border-t-[#3F3E45]">
+      <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
+        <span className="text-secondary">Contact Me On: </span>
       </p>
 
       <div className="flex flex-row md:mt-0 mt-6">
@@ -58,6 +65,19 @@ const Footer = () => (
         ))}
       </div>
     </div>
+
+    <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 pb-6 border-t-[1px] border-t-[#3F3E45]">
+      <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
+        <span className="text-secondary">Email: </span>
+      </p>
+
+      <div className="flex flex-row md:mt-0 mt-6">
+      <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
+        tameemraome@gmail.com<span className="text-secondary underline"></span>
+      </p>
+      </div>
+    </div>
+
   </section>
 );
 
